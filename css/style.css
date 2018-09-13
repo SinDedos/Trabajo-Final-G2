@@ -41,22 +41,56 @@
 
 }
 
-/*Paneles de la izquierda - PORTAL*/
+/*Pestañas de la izquierda - PORTAL*/
+.nav-pills > li {
+  	float: left;
+  	margin-left: -1px;
+  	width: 146px;
+}
+.nav-pills > li > a {
+  	border-radius: 0px;
+  	text-align: center;
+  }
+.nav-pills > li > a{
+	background-color:#191919;
+	color: #fff;
+}
+.nav-pills > li > a:hover{
+	background-color: #373333;
+}
+  
 
-#panelizq{
-	margin-left: -13px;
-	margin-bottom: -5px;
-	border-radius: 0px;
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  	color: #fff;
+  	background-color: #373333;
+}
+.nav-pills > li + li {
+  	margin-left: 0px;
+}
+.tab-content > .tab-pane {
+  	width: 32.6%;
+}
+.table > thead > tr > th {
+  	background-color: #333131;
+  	color: lightgray;
+  	font-style: italic;
+  	font-size: 12px;
+  	font-weight: normal;
+  	border-bottom: 0px;
+}
+.table > tbody > tr > td {
+	
+	background-color: #333131;
+	color: #fff; 
+	border-top: 0px;
+	font-size: 14px;
+	font-weight: normal;
+	color: lightgray;
+}
+#colordistinto{
+	background-color: #191919;
+}
 
-}
-#panelcab{
-	background-color: black;
-	color: white;
-}
 
-.lado-derecho{
-	margin-left: 55%
-}
-.fondo-white:hover{
-	background-color: #070719
-}
