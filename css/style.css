@@ -73,7 +73,6 @@
   	width: 32.6%;
 }
 .table > thead > tr > th {
-  	background-color: #333131;
   	color: lightgray;
   	font-style: italic;
   	font-size: 12px;
@@ -81,16 +80,24 @@
   	border-bottom: 0px;
 }
 .table > tbody > tr > td {
-	
-	background-color: #333131;
 	color: #fff; 
 	border-top: 0px;
 	font-size: 14px;
 	font-weight: normal;
 	color: lightgray;
 }
-#colordistinto{
+.colordistinto{
 	background-color: #191919;
 }
 
+.colordistinto1{
+	background-color: #333131;
+}
+
+.colordistinto2{
+	background-color: #FF0000;
+}
+.lado-derecho{
+	margin-left: 55%;
+}
 
