@@ -100,4 +100,29 @@
 .lado-derecho{
 	margin-left: 55%;
 }
+.radius{
+  border-radius: 100px;
+}
 
+.imgPerfil{
+  margin-top: -96%;
+  margin-left: 8%;
+}
+
+.TextModif{
+  margin-top: -30%;
+}
+
+@media (max-width: 767px) {
+  .radius{
+    border-radius: 0px;
+  }
+  .lado-derecho{
+    margin-left: 0%;
+  }
+  .imgPerfil{
+    margin-top: -19.2%;
+    margin-left: 6%;
+    width: 20%;
+  }
+}
