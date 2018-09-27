@@ -126,3 +126,24 @@
     width: 20%;
   }
 }
+
+/*************************************************************************/
+
+/* COSAS DEL FOOTER */
+
+/*************************************************************************/
+
+.footer{
+  width: 100%;
+  height: 415px;
+  font-family: 'Oswald';
+  color: white;
+  padding: 15px;
+  background-image: url('C:/Users/usuario/Documents/GitHub/Trabajo-Final-G2/img/25 footer.jpg')
+}
+.titulo{
+  font-size:60px;
+}
+.autores {
+  font-size: 15px;
+}
