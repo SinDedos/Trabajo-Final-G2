@@ -263,9 +263,48 @@
     </div>
    </div>
    </div>
+   
 
+   <div class="container">
+    <div class="panel panel-default">
+      <div id="comentado" class="panel-body">
+        
+      </div>
+    </div>
+     <div class="row">
+       <div class="col-xs-8">
+         <div class="panel panel-default">
+           <div class="panel-body">
+             <textarea name="f" id="areacomentario" class="form-control" rows="3" required="required"></textarea>
+           </div>
+           <div class="panel-footer">
+             <button style="margin-top: 10px;" type="button" id="comentar" class="btn btn-default">Comentar</button>
+           </div>
+         </div>
+
+       </div>
+     </div>
+   </div>
+  
       
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      var contador=1;
+      function eliminar(id){
+        $("#"+id).hide();
+      }
+      $("#comentar").click(function(event) {
+      var comentario=$("#areacomentario").val();
+      $("#comentado").append('<div id="comentario_'+contador+'" style="margin-bottom:10px;">'+comentario+'<button type="button"  onclick="eliminar(\'comentario_'+contador+'\');" class="btn btn-xs pull-right">x</button></div>');
+      $("#areacomentario").val("");
+      contador++;
+
+
+
+
+      });
+    </script>
   </body>
 </html>
