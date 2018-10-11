@@ -44,13 +44,63 @@
               <ul class="nav navbar-nav navbar-right">
                  
                   
-                 <li><a href="#"><span class="glyphicon glyphicon glyphicon-user"></span></a></li>
+                 <li id="icono-user"><a data-toggle="modal" href="#entrar"><span class="glyphicon glyphicon glyphicon-user"></span></a></li>
                 </ul>
               </div><!-- termina desplegable -->
             </div>
           </nav>
         </div>
       </div>  
+    </div>
+
+
+    <div class="modal fade" id="entrar">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Iniciar sesión</h4>
+          </div>
+          <div class="modal-body">
+            <form action="" method="POST" role="form">  
+              <div class="form-group">
+                <label for="">Usuario</label>
+                <input type="text" class="form-control" id="user">
+              </div>
+              <br>
+              <div class="class-form-group">
+                <label for="">Contraseña</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+              <br>
+              <div class="class-checkbox">
+                <label for=""><input type="checkbox" name="recordar" id="recordar"> Recuérdame</label>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" id="entrar-login" class="btn btn-primary">Entrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="salir">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Cerrar sesión</h4>
+          </div>
+          <div class="modal-body">
+            <h4>¿Esta seguro que quieren cerrar sesion?</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+            <button type="button" id="salir-si" class="btn btn-primary">Si</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- ACA TERMINA EL MENU -->
@@ -67,8 +117,8 @@
         <div class="col-sm-4">
           <img class="img-responsive imgPerfil" src="img/27.png" alt="">
         </div>
-        <div class="col-sm-8 TextModif">
-          <strong>SINDEDOS</strong>
+        <div class="col-sm-8 TextModif" id="Nick-user-pag">
+          <strong id="ejemplo-user">SINDEDOS</strong>
         </div>
         <div class="col-sm-12 TextColModif hidden-xs">¡El mas rapido del oesto!, Aunque no puedo disparar...</div>
       </div>
@@ -86,9 +136,9 @@
         </div>
         <div class="collapse navbar-collapse" id="miNavbar">
           <ul class="nav navbar-nav TextNavModif">
-            <li class="active"><a href="#Pag1"><strong>Juegos</strong></a></li>
-            <li><a href="#Pag2"><strong>Inventario</strong></a></li>
-            <li><a href="#Pag3"><strong>Medallas</strong></a></li>
+            <li onclick="Navbarfacil(1)"><a href="#Pag1"><strong>Juegos</strong></a></li>
+            <li onclick="Navbarfacil(2)"><a href="#Pag2"><strong>Inventario</strong></a></li>
+            <li onclick="Navbarfacil(3)"><a href="#Pag3"><strong>Medallas</strong></a></li>
             <li><a href="#Pag4"><strong>Videos / Capturas</strong></a></li>
             <li><a href="#Pag5"><strong>Criticas</strong></a></li>
             <li><a href="#Pag6"><strong>Amigos</strong></a></li>
@@ -98,27 +148,50 @@
     </nav>
 
 
-    <div class="container">
-      <div class="row active" id="Pag1">
-        <div class="col-sm-12">
-          <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo consectetur unde deserunt temporibus iure similique fuga vel dolorum, recusandae ducimus odit esse reiciendis! Eos velit, explicabo, accusamus vero error corrupti.</h1>
-        </div>
-        <div class="col-sm-12">
-          <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo consectetur unde deserunt temporibus iure similique fuga vel dolorum, recusandae ducimus odit esse reiciendis! Eos velit, explicabo, accusamus vero error corrupti.</h1>
-        </div>
-        <div class="col-sm-12">
-          <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo consectetur unde deserunt temporibus iure similique fuga vel dolorum, recusandae ducimus odit esse reiciendis! Eos velit, explicabo, accusamus vero error corrupti.</h1>
+    <div id="Pag1" style="display:none;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo consectetur unde deserunt temporibus iure similique fuga vel dolorum, recusandae ducimus odit esse reiciendis! Eos velit, explicabo, accusamus vero error corrupti.</h1>
+          </div>
+          <div class="col-sm-12">
+           <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo consectetur unde deserunt temporibus iure similique fuga vel dolorum, recusandae ducimus odit esse reiciendis! Eos velit, explicabo, accusamus vero error corrupti.</h1>
+          </div>
+         <div class="col-sm-12">
+            <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo consectetur unde deserunt temporibus iure similique fuga vel dolorum, recusandae ducimus odit esse reiciendis! Eos velit, explicabo, accusamus vero error corrupti.</h1>
+          </div>
         </div>
       </div>
-      <div class="row contEscondido fade" id="Pag2">
-        <div class="col-sm-12">
-          <h1>asdasdjaksdasjdaskdlaslkdjasdjlkasjalskdjalskdjalskdalsdjaklsdjalksdjalskdjalskdjlaksdjalksdas</h1>
+    </div>
+
+    <div id="Pag2" style="display:none;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</h1>
+          </div>
+          <div class="col-sm-12">
+           <h1>2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</h1>
+          </div>
+         <div class="col-sm-12">
+            <h1>333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333</h1>
+          </div>
         </div>
-        <div class="col-sm-12">
-          <h1>asdasdjaksdasjdaskdlaslkdjasdjlkasjalskdjalskdjalskdalsdjaklsdjalksdjalskdjalskdjlaksdjalksdas</h1>
-        </div>
-        <div class="col-sm-12">
-          <h1>asdasdjaksdasjdaskdlaslkdjasdjlkasjalskdjalskdjalskdalsdjaklsdjalksdjalskdjalskdjlaksdjalksdas</h1>
+      </div>
+    </div>
+
+    <div id="Pag3" style="display:none;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.</h1>
+          </div>
+          <div class="col-sm-12">
+           <h1>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</h1>
+          </div>
+         <div class="col-sm-12">
+            <h1>ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc</h1>
+          </div>
         </div>
       </div>
     </div>
@@ -127,5 +200,58 @@
       
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $('#entrar-login').click(function(event){
+        var psw = $('#pwd').val();
+        var nick = $('#user').val();
+        if (psw == 123456) {
+          $("#ejemplo-user").empty();
+          $('#Nick-user-pag').append('<strong>'+nick+'</strong>')
+          $('#entrar').modal('hide');
+          $('#user').val('');
+          $('#pwd').val('');
+          $("#icono-user").empty();
+          $('#icono-user').html('<a data-toggle="modal" href="#salir">'+nick+'<span class="glyphicon glyphicon glyphicon-user"></span></a>');
+        }
+      });
+
+      $('#salir-si').click(function(event){
+        $('#Nick-user-pag').html('<strong id="ejemplo-user">SINDEDOS</strong>');
+        $('#icono-user').html('<a data-toggle="modal" href="#entrar"><span class="glyphicon glyphicon glyphicon-user"></span></a>');
+        $('#salir').modal('hide');
+      });
+
+      function Navbarfacil(numero) {
+        var Pa1 = document.getElementById('Pag1');
+        var Pa2 = document.getElementById('Pag2');
+        var Pa3 = document.getElementById('Pag3');
+
+        switch(numero) {
+          case 1:
+
+              Pa1.style.display = 'block';
+              Pa2.style.display = 'none';
+              Pa3.style.display = 'none';
+            break;
+
+         case 2:
+                  Pa1.style.display = 'none';
+                  Pa2.style.display = 'block';
+                  Pa3.style.display = 'none';
+            break;
+
+         case 3:
+                  Pa1.style.display = 'none';
+                  Pa2.style.display = 'none';
+                  Pa3.style.display = 'block';
+            break;
+
+        default:
+                  alert("hay un problema: No existe el producto.")
+                }
+
+   }
+    </script>
   </body>
 </html>
