@@ -1,0 +1,187 @@
+/*Carousel*/
+
+.carousel-caption {
+  	position: absolute;
+  	right: 15%;
+ 	bottom: 20px;
+  	left: 3%;
+  	z-index: 10;
+  	padding-top: 20px;
+  	padding-bottom: 20px;
+  	color: #fff;
+  	text-align: left;
+  	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+.carousel-caption > p{
+	font-size: 17px;
+	font-family: 'Nunito Sans', sans-serif;
+	color: white;
+	text-shadow: 0px 1px 30px rgba(111, 111, 103, 1);
+
+}
+.carousel-caption > h1{
+	font-size: 38px;
+	font-family: 'Fjalla One', sans-serif;
+	letter-spacing: 3px;
+	text-indent: 4px;
+	text-decoration: line-through;
+	text-shadow: 4px 3px 0px rgba(211, 211, 195, 0); 
+	
+
+}
+.carousel-caption .btn {
+  	text-shadow: none;
+  	left: 50%;
+
+}
+.carousel-caption .btn:hover {
+  	transform: scale(1.1);
+	transition: 0.5s;
+	background-color: #1f6abe;
+
+}
+
+/*Pestañas de la izquierda - PORTAL*/
+.nav-pills > li {
+  	float: left;
+  	margin-left: -1px;
+  	width: 146px;
+}
+.nav-pills > li > a {
+  	border-radius: 0px;
+  	text-align: center;
+  }
+.nav-pills > li > a{
+	background-color:#191919;
+	color: #fff;
+}
+.nav-pills > li > a:hover{
+	background-color: #373333;
+}
+  
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  	color: #fff;
+  	background-color: #373333;
+}
+.nav-pills > li + li {
+  	margin-left: 0px;
+}
+.tab-content > .tab-pane {
+  	width: 32.6%;
+}
+.table > thead > tr > th {
+  	color: lightgray;
+  	font-style: italic;
+  	font-size: 12px;
+  	font-weight: normal;
+  	border-bottom: 0px;
+}
+.table > tbody > tr > td {
+	color: #fff; 
+	border-top: 0px;
+	font-size: 14px;
+	font-weight: normal;
+	color: lightgray;
+}
+.colordistinto{
+	background-color: #191919;
+}
+
+.colordistinto1{
+	background-color: #333131;
+}
+
+.colordistinto2{
+	background-color: #FF0000;
+}
+.lado-derecho{
+	margin-left: 55%;
+}
+.radius{
+  border-radius: 100px;
+}
+
+.imgPerfil{
+  margin-top: -96%;
+  margin-left: 8%;
+}
+
+.TextModif{
+  margin-top: -23%;
+  font-size: 2.5em;
+}
+
+.TextColModif{
+  position: absolute;
+  margin-top: -13%;
+  margin-left: 33.5%;
+  font-size: 2em;
+}
+
+.TextNavModif{
+  margin-left: 11%;
+  font-size: 25px;
+}
+
+.navModif{
+  margin-top: 1%;
+  border-radius: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.contEscondido{
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .radius{
+    border-radius: 0px;
+  }
+  .lado-derecho{
+    margin-left: 0%;
+  }
+  .imgPerfil{
+    margin-top: -19.2%;
+    margin-left: 6%;
+    width: 20%;
+  }
+  .TextModif{
+    margin-top: -13%;
+    margin-left: 30%;
+    font-size: 1.5em;
+  }
+  .navModif{
+    margin-top: 1%;
+    border-radius: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/*************************************************************************/
+
+/* COSAS DEL FOOTER */
+
+/*************************************************************************/
+
+.footer{
+  width: 100%;
+  height: 415px;
+  font-family: 'Oswald';
+  color: white;
+  padding: 15px;
+  background-image: url('C:/Users/usuario/Documents/GitHub/Trabajo-Final-G2/img/25 footer.jpg')
+}
+.titulo{
+  font-size:40px;
+}
+.autores {
+  font-size: 15px;
+  margin-top: 130px;
+}
+
+a
