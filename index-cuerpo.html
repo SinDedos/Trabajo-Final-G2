@@ -205,13 +205,14 @@
       </div>
       </div>
     
- 
+ 		
 
-  
-     
+  		<div class="flecha-arriba" id="flecha-arriba"><input type="button" name="" id="boton"></div>
+     	<div class="divcarrousel">
         <div class="col-xs-9">
 
-		<div class="panel-group">
+
+		<div class="panel-group" id="gruposdepaneles">
 		    <div class="panel panel">
 		      <div class="panel-heading">League Of Legends</div>
 		      <div class="panel-body"><div class="container">
@@ -269,35 +270,29 @@
 		 </div>
 
 		 </div>
-		</div>  		 	
-     </div>
-  
-
-       
-
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+		</div>
+		</div>
+		<div class="flecha-abajo" id="flecha-abajo"></div>
+		
+			
+ 		 		 	
     </div>
-   </div>
-   </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
    
 
    <div class="container">
@@ -326,10 +321,25 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+    /*carrusel vertical*/
+    	
+    	$("boton").onclick(function flearriba(){
+    		if(document.getElementbyId("gruposdepaneles").class.Name=="panel-group")
+    			document.getElementbyId("gruposdepaneles").class.Name="nuevoestilocarru";;
+    		
+    		else 
+    			document.getElementbyId("gruposdepaneles").class.Name="panel-group";
+    		
+    	});	
+
+
+
+    /*carrusel vertical*/
       var contador=1;
-      function eliminar(id){
+      	function eliminar(id){
         $("#"+id).hide();
       }
+
 
       $("#comentar").click(function(event) {
       var comentario=$("#areacomentario").val();
