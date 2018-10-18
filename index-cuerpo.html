@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="css/style-hernan.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    
+ 
   </head>
-  <body background="img/4.jpg">
+  <body background="img/4.jpg" ">
    <div id="carousel-id" class="carousel slide" data-ride="carousel">
      <ol class="carousel-indicators">
        <li data-target="#carousel-id" data-slide-to="0" class=""></li>
@@ -44,7 +46,7 @@
            <div class="carousel-caption">
              <h1>LEAGUE OF LEGENDS</h1>
              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-             <p><a class="btn btn-lg btn-primary" href="#" role="button">Explora</a></p>
+             <p><a class="btn btn-lg btn-primary" href="#" role="button" >Explora</a></p>
            </div>
          </div>
        </div>
@@ -328,6 +330,7 @@
       function eliminar(id){
         $("#"+id).hide();
       }
+
       $("#comentar").click(function(event) {
       var comentario=$("#areacomentario").val();
       $("#comentado").append('<div id="comentario_'+contador+'" style="margin-bottom:10px;">'+comentario+'<button type="button"  onclick="eliminar(\'comentario_'+contador+'\');" class="btn btn-xs pull-right">x</button></div>');
