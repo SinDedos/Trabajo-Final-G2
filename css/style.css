@@ -162,6 +162,14 @@
   }
 }
 
+.menu{
+
+}
+
+.menu-fixed {
+  position: fixed;
+}
+
 /*************************************************************************/
 
 /* COSAS DEL FOOTER STYLO KEVIN*/
