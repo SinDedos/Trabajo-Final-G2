@@ -208,8 +208,8 @@
   
 }
 .panel-group{
-  position: absolute;
-  display: center;
+  width: 100%;
+  position: relative;
   
 }
 .panel-group .panel + .panel {
@@ -249,3 +249,23 @@
 }
 
 /*carrusel vertical*/
+
+/*presentaciones con videos*/
+.divideo{
+  margin-left: -15px;
+  width: 1350px;
+  height: 400px;
+  margin-top: 15px;
+  background-color: red;
+  overflow: hidden;
+  
+}
+#video1{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: -150px;
+
+  }
+
+/*presentaciones con videos*/
