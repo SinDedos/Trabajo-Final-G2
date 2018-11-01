@@ -144,7 +144,7 @@
 
 /*Cosas para el archivo nuevo*/
 
-/*Carrusel*/
+/*Carousel*/
 
 .carousel-caption {
     position: absolute;
@@ -181,3 +181,31 @@
 .carousel-caption .btn:hover {
     transform: scale(1.1);
   transition: 0.5s;
+}
+
+/*Gallería*/
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #933030;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #ff0000
+}
+
+div.gallery img {
+width: 100%;
+height: auto;
+}
+
+div.desc {
+  padding: 10px
+  text-align: center;
+}
+
+div.panel-body{
+  background-color: #777777
+}
