@@ -200,16 +200,21 @@
 .panel-body{
   background-color: #275D8C;
   color: white;
+
 }
+
 .panel-body img:hover{
-  -webkit-box-shadow: 0px 1px 35px 0px rgba(2,116,216,0.84);
-  -moz-box-shadow: 0px 1px 35px 0px rgba(2,116,216,0.84);
-  box-shadow: 0px 1px 35px 0px rgba(2,116,216,0.84);
+  -webkit-box-shadow: 0px 1px 35px 0px rgba(2,116,216,0.94);
+  -moz-box-shadow: 0px 1px 35px 0px rgba(2,116,216,0.94);
+  box-shadow: 0px 1px 35px 0px rgba(2,116,216,0.94);
+  transition-duration:1s;
+  transition-timing-function: ease; 
   
 }
 .panel-group{
   width: 100%;
   position: relative;
+  margin-top: 24px;
   
 }
 .panel-group .panel + .panel {
@@ -228,17 +233,20 @@
 }/*carrusel vertical*/
 .divcarrousel{
   margin-top: 16px;
-  width: :300px; 
   height: 500px;
+  overflow: hidden;
+  width: 100%;
+
   
 }
 .flecha-arriba{
   position: absolute;
   height: 30px;
-  width: 875px;
-  margin-left: 400px;
-  background-color: lightgray;
-  opacity: 0.3;
+  width: 900px;
+  margin-left: 385px;
+  margin-top: 10px;
+  background-color: gray;
+  opacity: 0.5;
   z-index: 1;
 
 }
@@ -252,8 +260,9 @@
 
 /*presentaciones con videos*/
 .divideo{
-  margin-left: -15px;
-  width: 1350px;
+  margin-left: -5px;
+  margin-top: -20px;
+  width: 1320px;
   height: 400px;
   margin-top: 15px;
   background-color: red;
