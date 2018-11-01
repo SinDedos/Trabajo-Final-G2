@@ -34,10 +34,10 @@
                 <!-- navbar lado izquierdo -->
                 <div class="lado-derecho">
                   <ul class="nav navbar-nav">
-                    <li class="fondo-white"><a href="#"><strong>PORTAL</strong></a></li>
-                    <li class="fondo-white"><a href="#"><strong>CATALOGO JUEGOS</strong></a></li>
+                    <li class="fondo-white"><a href="index-cuerpo.html"><strong>PORTAL</strong></a></li>
+                    <li class="fondo-white"><a href="index-catalogo de juegos.html"><strong>CATALOGO JUEGOS</strong></a></li>
                     <li class="fondo-white"><a href="#"><strong>SHOP</strong></a></li>
-                    <li class="fondo-white"><a href="#"><strong>INFORMACION</strong></a></li>
+                    <li class="fondo-white"><a href="index-menu.html"><strong>INFORMACION</strong></a></li>
                 </ul>
                 </div>
                 <!-- Navbar lado derecho -->
@@ -137,7 +137,10 @@
         <div class="col-sm-8 TextModif" id="Nick-user-pag">
           <strong id="ejemplo-user">SINDEDOS</strong>
         </div>
-        <div class="col-sm-12 TextColModif hidden-xs">¡El mas rapido del oesto!, Aunque no puedo disparar...</div>
+        <div class="col-sm-12 TextColModif hidden-xs hidden-sm">¡El mas rapido del oesto!, Aunque no puedo disparar...</div>
+        <div class="col-sm-12 TextColModif2">
+          <span class="glyphicon glyphicon-fire"></span>MONEDAS: 120
+        </div>
       </div>
     </div>
 
@@ -682,7 +685,7 @@
           $('#user').val('');
           $('#pwd').val('');
           $("#icono-user").empty();
-          $('#icono-user').html('<a data-toggle="modal" href="#salir">'+nick+'<span class="glyphicon glyphicon glyphicon-user"></span></a>');
+          $('#icono-user').html('<a data-toggle="modal" href="#salir"><span class="glyphicon glyphicon glyphicon-user"></span></a>');
         }
         else{$('#pswError').modal('show');}
       });
