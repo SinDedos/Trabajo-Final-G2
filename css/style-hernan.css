@@ -270,6 +270,18 @@
 .divcarrousel::-webkit-scrollbar-thumb:window-inactive{
   opacity:1;
 }
+body{
+  overflow-x: hidden;
+  }
+body::-webkit-scrollbar{
+  width: 15px;
+  background: black;
+  opacity: 0.5
+}
+body::-webkit-scrollbar-thumb{
+  background: #275D8C;
+  opacity: 0.5
+}
  
 
 /*carrusel vertical*/
