@@ -387,4 +387,10 @@ body::-webkit-scrollbar-thumb{
 
   }
 
+ .footerk{
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
 /*presentaciones con videos*/

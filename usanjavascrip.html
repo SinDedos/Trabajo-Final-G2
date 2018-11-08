@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>index</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    
+    <br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="panel panel-default">
+            <div class="panel-body" id="Comentarios">
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <textarea name="f_comentario" id="f_comentario" class="form-control" rows="5" required="required"></textarea>
+              <div style="margin-top: 10px">
+                <button type="button" id="Comentar" class="btn btn-default pull-right">Comentar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  <button type="button" onclick="eliminar(\'Comentario_'+contador+'\');" class="btn btn-xs pull-right btn-default">X</button>
+
+      
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+      var contador = 1;
+
+      function eliminar(id){
+        $(id).hide();
+      }
+      $('#Comentar').click(function(event){
+        var comentario = $('#f_comentario').val();
+        $('#Comentarios').append('<div id="Comentario_'+contador+'" style="margin-bottom:10px;"><b>Kevin: </b>'+comentario+'<button type="button" onclick="eliminar(\Comentario_'+contador+'\);" class="btn btn-xs pull-right btn-default">X</button></div>');
+        $('#f_comentario').val('');
+        $('#f_comentario').focus();
+        contador++;
+      });
+    </script>
+  </body>
+</html>
